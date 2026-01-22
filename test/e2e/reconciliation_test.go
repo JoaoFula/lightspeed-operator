@@ -22,7 +22,7 @@ import (
 // - All tests share a single cluster-scoped OLSConfig CR
 // - Uses DeleteAndWait in AfterAll to prevent resource pollution between test suites
 // - Tests verify operator reconciliation behavior by modifying the CR and checking results
-var _ = Describe("Reconciliation From OLSConfig CR", Ordered, func() {
+var _ = Describe("Reconciliation From OLSConfig CR", Label("reconciliation"), Ordered, func() {
 	var cr *olsv1alpha1.OLSConfig
 	var err error
 	var client *Client

@@ -44,7 +44,7 @@ const (
 	// OLSCRName is the name of the OLSConfig CR
 	OLSCRName = "cluster"
 	// AppServerDeploymentName is the name of the OLS application server deployment
-	AppServerDeploymentName = "lightspeed-app-server"
+	AppServerDeploymentName = "lightspeed-stack-deployment"
 	// AppServerServiceName is the name of the OLS application server service
 	AppServerServiceName = "lightspeed-app-server"
 	// AppServerServiceHTTPSPort is the port number of the OLS application server service
@@ -60,7 +60,7 @@ const (
 	// ArtifactDir is the relative path to where the artifacts will be exported to
 	ArtifactDir = "ARTIFACT_DIR"
 	// serverContainerName is the name of the app-server container
-	ServerContainerName = "lightspeed-service-api"
+	ServerContainerName = "lightspeed-stack"
 	// OLSConsolePluginServiceHTTPSPort is the port number of the OLS console plugin service
 	OLSConsolePluginServiceHTTPSPort = 9443
 	// AppServerConfigMapName is the name of the OLS application server config map

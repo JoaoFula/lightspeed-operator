@@ -18,7 +18,7 @@ import (
 // - All tests share a single cluster-scoped OLSConfig CR
 // - Uses DeleteAndWait in AfterAll to prevent resource pollution between test suites
 // - FlakeAttempts(5) handles transient Prometheus query timing issues
-var _ = Describe("Prometheus Metrics", FlakeAttempts(5), Ordered, func() {
+var _ = Describe("Prometheus Metrics", Label("metrics"), FlakeAttempts(5), Ordered, func() {
 	const metricsViewerSAName = "metrics-viewer-sa"
 	const clusterMonitoringViewClusterRole = "cluster-monitoring-view"
 	var cr *olsv1alpha1.OLSConfig
